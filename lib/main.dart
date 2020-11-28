@@ -3,14 +3,15 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ridebuddies/pages/login/login_page.dart';
+import 'package:ridebuddies/screens/Dashboard/dashboard_page.dart';
+import 'package:ridebuddies/screens/login/login_page.dart';
 import 'package:ridebuddies/style/colors.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: primary,
+      statusBarColor: white,
       statusBarIconBrightness:
-          Platform.isAndroid ? Brightness.light : Brightness.dark));
+          Platform.isAndroid ? Brightness.dark : Brightness.light));
   runApp(MyApp());
 }
 
@@ -21,9 +22,9 @@ class MyApp extends StatelessWidget {
       title: 'Ride Buddies',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: MaterialColor(0xFF33a852, getSwatch(primary)),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+          primarySwatch: MaterialColor(0xFF33a852, getSwatch(primary)),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: 'Handel Gothic'),
       home: Builder(builder: (context) {
         final width = MediaQuery.of(context).size.width;
         if (width < 600) {

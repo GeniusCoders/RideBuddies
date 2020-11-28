@@ -25,7 +25,12 @@ Map<int, Color> getSwatch(Color color) {
   };
 }
 
-Color primary = Color(0xFF33a852);
-Color lightBlack = Color(0xFF242424);
-Color black = Color(0xFF000000);
-Color white = Color(0xFFFFFFFF);
+const Color primary = Color(0xFF33a852);
+const Color primaryLight = Color(0xFF32A663);
+
+const Color lightBlack = Color(0xFF242424);
+const Color black = Color(0xFF000000);
+const Color white = Color(0xFFFFFFFF);
+
+const Color mediumGrey = Color(0xFF707070);
+const Color lightWhite = Color(0xFFF8F8F8);

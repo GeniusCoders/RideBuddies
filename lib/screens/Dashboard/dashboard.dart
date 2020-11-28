@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Signup extends StatelessWidget {
+class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
