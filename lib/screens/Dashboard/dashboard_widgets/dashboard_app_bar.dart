@@ -41,7 +41,7 @@ class DashboardAppBar extends StatelessWidget {
           IconButton(
               icon: Icon(
                 MdiIcons.bell,
-                size: 26,
+                size: 24,
                 color: primary,
               ),
               onPressed: () {}),
