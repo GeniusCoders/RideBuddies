@@ -1,9 +1,7 @@
 name: ridebuddies
 description: A new Flutter project.
 
-
-publish_to: 'none' 
-
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -19,6 +17,8 @@ dependencies:
   font_awesome_flutter: ^8.10.0
   google_maps_flutter: ^1.0.5
   flutter_svg: ^0.19.1
+  material_design_icons_flutter: ^4.0.5755
+  geolocator: ^6.1.8+1
 
 dev_dependencies:
   flutter_test:
@@ -30,12 +30,13 @@ flutter:
   assets:
     - assets/
     - assets/svg/
+    - assets/map_style/
 
   # example:
   fonts:
     - family: Handel Gothic
       fonts:
-        - asset: fonts/HandelGothic.ttf
+        - asset: fonts/SourceSansPro-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

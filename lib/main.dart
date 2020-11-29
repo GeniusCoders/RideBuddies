@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ridebuddies/screens/Dashboard/dashboard_page.dart';
 import 'package:ridebuddies/screens/login/login_page.dart';
 import 'package:ridebuddies/style/colors.dart';
 
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: MaterialColor(0xFF33a852, getSwatch(primary)),
           visualDensity: VisualDensity.adaptivePlatformDensity,
-          fontFamily: 'Handel Gothic'),
+          fontFamily: 'Source Sans Pro'),
       home: Builder(builder: (context) {
         final width = MediaQuery.of(context).size.width;
         if (width < 600) {

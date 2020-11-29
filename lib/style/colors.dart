@@ -34,3 +34,5 @@ const Color white = Color(0xFFFFFFFF);
 
 const Color mediumGrey = Color(0xFF707070);
 const Color lightWhite = Color(0xFFF8F8F8);
+
+const Color darkGrey = Color(0xFF707070);

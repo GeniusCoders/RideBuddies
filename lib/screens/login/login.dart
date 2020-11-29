@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:ridebuddies/screens/Dashboard/dashboard_page.dart';
 import 'package:ridebuddies/screens/login/login_widgets/login_headings.dart';
 import 'package:ridebuddies/screens/login/login_widgets/mobile_number_field.dart';
 import 'package:ridebuddies/style/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ridebuddies/widgets/common/background_map/background_map.dart';
+import 'package:ridebuddies/widgets/common/buttons/button.dart';
 import 'package:ridebuddies/widgets/logos/logo.dart';
+
+import 'login_widgets/login_terms_and_condition.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -22,10 +26,20 @@ class Login extends StatelessWidget {
               children: [
                 LoginHeadings(),
                 SizedBox(height: 8.h),
-                MobileNumberField()
+                MobileNumberField(),
+                SizedBox(height: 16),
+                Button(
+                  title: 'Send OTP Code',
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (_) => DashboardPage()));
+                  },
+                )
               ],
             ),
-          )
+          ),
+          Spacer(),
+          LoginTermsAndConditions()
         ],
       ),
     );
