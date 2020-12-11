@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ridebuddies/screens/Dashboard/dashboard_widgets/map_widget.dart';
-
 import 'dashboard_widgets/dashboard_app_bar.dart';
-import 'dashboard_widgets/search_place.dart';
+import 'dashboard_widgets/dashboard_bottom.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Dashboard extends StatelessWidget {
   @override
@@ -16,7 +16,7 @@ class Dashboard extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 MapWidget(),
-                Positioned(bottom: 40, child: SearchPlace())
+                Positioned(bottom: 40.h, child: DashboardBottom())
               ],
             ),
           )

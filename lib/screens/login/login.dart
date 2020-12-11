@@ -13,34 +13,36 @@ import 'login_widgets/login_terms_and_condition.dart';
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BackgroundMap(
-      child: Column(
-        children: [
-          Logo(),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 26.h),
-            decoration: BoxDecoration(
-                color: white, borderRadius: BorderRadius.circular(8.w)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                LoginHeadings(),
-                SizedBox(height: 8.h),
-                MobileNumberField(),
-                SizedBox(height: 16),
-                Button(
-                  title: 'Send OTP Code',
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (_) => DashboardPage()));
-                  },
-                )
-              ],
+    return SingleChildScrollView(
+      child: BackgroundMap(
+        child: Column(
+          children: [
+            Logo(),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 26.h),
+              decoration: BoxDecoration(
+                  color: white, borderRadius: BorderRadius.circular(8.w)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  LoginHeadings(),
+                  SizedBox(height: 8.h),
+                  MobileNumberField(),
+                  SizedBox(height: 16),
+                  Button(
+                    title: 'Send OTP Code',
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => DashboardPage()));
+                    },
+                  )
+                ],
+              ),
             ),
-          ),
-          Spacer(),
-          LoginTermsAndConditions()
-        ],
+            Spacer(),
+            LoginTermsAndConditions()
+          ],
+        ),
       ),
     );
   }

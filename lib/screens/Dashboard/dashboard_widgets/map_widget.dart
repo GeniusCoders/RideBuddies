@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:ridebuddies/style/colors.dart';
 
 class MapWidget extends StatefulWidget {
   @override
@@ -39,22 +38,19 @@ class _MapWidgetState extends State<MapWidget> {
             mapType: MapType.normal,
             initialCameraPosition: CameraPosition(
               target: LatLng(position.latitude, position.longitude),
-              zoom: 10,
+              zoom: 14,
             ),
             zoomControlsEnabled: false,
+            myLocationEnabled: true,
+            myLocationButtonEnabled: false,
             onMapCreated: (GoogleMapController controller) {
               _controller = controller;
               _controller.setMapStyle(_mapStyle);
+              Future.delayed(Duration(milliseconds: 100), () {
+                _controller.animateCamera(CameraUpdate.newLatLng(
+                    LatLng(position.latitude, position.longitude)));
+              });
             },
-            circles: Set.from([
-              Circle(
-                  circleId: CircleId('circle'),
-                  center: LatLng(position.latitude, position.longitude),
-                  radius: 100,
-                  fillColor: primary,
-                  strokeWidth: 10,
-                  strokeColor: white)
-            ]),
           ),
         ],
       ),
