@@ -9,12 +9,15 @@ class SelectVehical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
-      initialChildSize: 0.4,
-      minChildSize: 0.4,
-      maxChildSize: 0.4,
+      initialChildSize: 0.41,
+      minChildSize: 0.41,
+      maxChildSize: 0.41,
       builder: (BuildContext context, myscrollController) {
         return Container(
-          color: white,
+          decoration: BoxDecoration(
+            color: white,
+            borderRadius: BorderRadius.circular(20.ssp),
+          ),
           padding: EdgeInsets.only(bottom: 10.h),
           child: ListView(
             shrinkWrap: true,
@@ -40,7 +43,8 @@ class SelectVehical extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
                 child: Button(title: 'Confirm Rikshaw'),
-              )
+              ),
+              SizedBox(height: 16.h),
             ],
           ),
         );

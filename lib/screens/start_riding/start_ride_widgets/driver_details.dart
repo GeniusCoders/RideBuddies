@@ -14,8 +14,11 @@ class DriverDetails extends StatelessWidget {
       maxChildSize: 0.58,
       builder: (BuildContext context, myscrollController) {
         return Container(
-          color: white,
           padding: EdgeInsets.symmetric(horizontal: 16.h),
+          decoration: BoxDecoration(
+            color: white,
+            borderRadius: BorderRadius.circular(20.ssp),
+          ),
           child: ListView(
             shrinkWrap: true,
             controller: myscrollController,
@@ -24,7 +27,7 @@ class DriverDetails extends StatelessWidget {
                 'Your ride is arriving in 10 min',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 16.ssp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -35,20 +38,20 @@ class DriverDetails extends StatelessWidget {
                 thickness: .8,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 16.0),
+                padding: EdgeInsets.symmetric(vertical: 16.0.h),
                 child: Row(
                   children: [
                     CircleAvatar(
                       backgroundImage: NetworkImage(
                           'https://randomuser.me/api/portraits/men/31.jpg'),
-                      radius: 36,
+                      radius: 36.ssp,
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: 20.w),
                     DriverNameCarDetails(),
                     CircleIcon(
                       icon: MdiIcons.message,
                     ),
-                    SizedBox(width: 14),
+                    SizedBox(width: 14.w),
                     CircleIcon(
                       icon: MdiIcons.phone,
                     )
@@ -65,7 +68,7 @@ class DriverDetails extends StatelessWidget {
                 'Your Current Trip',
                 style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 14),
+              SizedBox(height: 14.h),
               Row(
                 children: [
                   Column(
@@ -148,9 +151,13 @@ class DriverDetails extends StatelessWidget {
                   style: TextStyle(fontSize: 14.sp, letterSpacing: .4),
                 ),
                 elevation: 0,
-                textColor: Colors.red,
+                textColor: Colors.white,
+                color: Colors.red,
                 onPressed: () {},
-              )
+              ),
+              SizedBox(
+                height: 15.h,
+              ),
             ],
           ),
         );
