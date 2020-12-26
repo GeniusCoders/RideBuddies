@@ -31,29 +31,23 @@ class _MapWidgetState extends State<MapWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Stack(
-        children: [
-          GoogleMap(
-            mapType: MapType.normal,
-            initialCameraPosition: CameraPosition(
-              target: LatLng(position.latitude, position.longitude),
-              zoom: 14,
-            ),
-            zoomControlsEnabled: false,
-            myLocationEnabled: true,
-            myLocationButtonEnabled: false,
-            onMapCreated: (GoogleMapController controller) {
-              _controller = controller;
-              _controller.setMapStyle(_mapStyle);
-              Future.delayed(Duration(milliseconds: 100), () {
-                _controller.animateCamera(CameraUpdate.newLatLng(
-                    LatLng(position.latitude, position.longitude)));
-              });
-            },
-          ),
-        ],
+    return GoogleMap(
+      mapType: MapType.normal,
+      initialCameraPosition: CameraPosition(
+        target: LatLng(position.latitude, position.longitude),
+        zoom: 14,
       ),
+      zoomControlsEnabled: false,
+      myLocationEnabled: true,
+      myLocationButtonEnabled: false,
+      onMapCreated: (GoogleMapController controller) {
+        _controller = controller;
+        _controller.setMapStyle(_mapStyle);
+        Future.delayed(Duration(milliseconds: 100), () {
+          _controller.animateCamera(CameraUpdate.newLatLng(
+              LatLng(position.latitude, position.longitude)));
+        });
+      },
     );
   }
 }

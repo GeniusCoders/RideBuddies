@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ridebuddies/style/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class BackgroundMap extends StatelessWidget {
+class BackgroundSvgMap extends StatelessWidget {
   final Widget child;
 
-  const BackgroundMap({@required this.child});
+  const BackgroundSvgMap({@required this.child});
 
   @override
   Widget build(BuildContext context) {

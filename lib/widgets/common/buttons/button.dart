@@ -6,9 +6,7 @@ class Button extends StatelessWidget {
   final Function() onPressed;
   final String title;
   final bool swipeColor;
-  const Button(
-      {Key key, this.onPressed, @required this.title, this.swipeColor = false})
-      : super(key: key);
+  const Button({this.onPressed, @required this.title, this.swipeColor = false});
 
   @override
   Widget build(BuildContext context) {
