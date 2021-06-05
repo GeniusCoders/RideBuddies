@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ridebuddies/screens/Dashboard/dashboard_page.dart';
 import 'package:ridebuddies/screens/login/login_widgets/login_headings.dart';
 import 'package:ridebuddies/screens/login/login_widgets/mobile_number_field.dart';
 import 'package:ridebuddies/style/colors.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ridebuddies/widgets/common/background_svg_map/background_svg_map.dart';
 import 'package:ridebuddies/widgets/common/buttons/button.dart';
 import 'package:ridebuddies/widgets/logos/logo.dart';
@@ -25,7 +25,7 @@ class Login extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  LoginHeadings(),
+                  LoginTitle(),
                   SizedBox(height: 8.h),
                   MobileNumberField(),
                   SizedBox(height: 16),
@@ -35,7 +35,8 @@ class Login extends StatelessWidget {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (_) => DashboardPage()));
                     },
-                  )
+                  ),
+                  Text("HELLO MOTO")
                 ],
               ),
             ),
