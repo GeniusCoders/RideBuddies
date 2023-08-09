@@ -1,0 +1,27 @@
+<svg id="IN" xmlns="http://www.w3.org/2000/svg" width="23.465" height="15.374" viewBox="0 0 23.465 15.374">
+  <path id="Path_792" data-name="Path 792" d="M23.465,93.648H0V88.7a.415.415,0,0,1,.4-.424H23.061a.415.415,0,0,1,.4.424v4.948Z" transform="translate(0 -88.276)" fill="#fab446"/>
+  <path id="Path_793" data-name="Path 793" d="M23.061,317.281H.4a.415.415,0,0,1-.4-.424v-4.948H23.465v4.948A.415.415,0,0,1,23.061,317.281Z" transform="translate(0 -301.908)" fill="#73af00"/>
+  <rect id="Rectangle_13" data-name="Rectangle 13" width="23.465" height="5.372" transform="translate(0 5.001)" fill="#f5f5f5"/>
+  <g id="Group_1" data-name="Group 1" transform="translate(9.453 5.407)">
+    <path id="Path_794" data-name="Path 794" d="M210.832,213.112a2.28,2.28,0,1,1,2.28-2.28A2.282,2.282,0,0,1,210.832,213.112Zm0-4.135a1.856,1.856,0,1,0,1.856,1.856A1.858,1.858,0,0,0,210.832,208.977Z" transform="translate(-208.552 -208.553)" fill="#41479b"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.258" cy="0.258" r="0.258" transform="translate(2.021 2.021)" fill="#41479b"/>
+    <path id="Path_795" data-name="Path 795" d="M215.034,253.958l-.657.066-1.411-.066v-.078l1.411-.066.657.066Z" transform="translate(-212.754 -251.639)" fill="#41479b"/>
+    <path id="Path_796" data-name="Path 796" d="M256,253.958l.657.066,1.411-.066v-.078l-1.411-.066-.657.066Z" transform="translate(-253.72 -251.639)" fill="#41479b"/>
+    <path id="Path_797" data-name="Path 797" d="M253.879,215.035l-.066-.657.066-1.411h.078l.066,1.411-.066.657Z" transform="translate(-251.638 -212.755)" fill="#41479b"/>
+    <path id="Path_798" data-name="Path 798" d="M253.879,256l-.066.657.066,1.411h.078l.066-1.411-.066-.657Z" transform="translate(-251.638 -253.721)" fill="#41479b"/>
+    <path id="Path_799" data-name="Path 799" d="M226.462,226.518l-.511-.417L225,225.056l.055-.055,1.045.951.417.511Z" transform="translate(-224.21 -224.211)" fill="#41479b"/>
+    <path id="Path_800" data-name="Path 800" d="M255.43,255.486l.417.511,1.045.951.055-.055L256,255.848l-.511-.417Z" transform="translate(-253.178 -253.179)" fill="#41479b"/>
+    <path id="Path_801" data-name="Path 801" d="M255.43,226.463l.417-.511,1.045-.951.055.055L256,226.1l-.511.417Z" transform="translate(-253.178 -224.211)" fill="#41479b"/>
+    <path id="Path_802" data-name="Path 802" d="M226.462,255.431l-.511.417L225,256.893l.055.055L226.1,256l.417-.511Z" transform="translate(-224.21 -253.179)" fill="#41479b"/>
+    <path id="Path_803" data-name="Path 803" d="M217.873,255.327l-.581.313-1.329.479-.03-.072,1.278-.6.632-.19Z" transform="translate(-215.578 -253.011)" fill="#41479b"/>
+    <path id="Path_804" data-name="Path 804" d="M255.721,239.65l.632-.19,1.278-.6-.03-.072-1.329.479-.581.313Z" transform="translate(-253.426 -237.334)" fill="#41479b"/>
+    <path id="Path_805" data-name="Path 805" d="M239.577,217.874l-.313-.581-.479-1.329.072-.03.6,1.278.19.632Z" transform="translate(-237.333 -215.579)" fill="#41479b"/>
+    <path id="Path_806" data-name="Path 806" d="M255.254,255.722l.19.632.6,1.278.072-.03-.479-1.329-.313-.581Z" transform="translate(-253.01 -253.427)" fill="#41479b"/>
+    <path id="Path_807" data-name="Path 807" d="M217.843,239.65l-.632-.19-1.278-.6.03-.072,1.329.479.581.313Z" transform="translate(-215.578 -237.334)" fill="#41479b"/>
+    <path id="Path_808" data-name="Path 808" d="M255.691,255.327l.581.313,1.329.479.03-.072-1.278-.6-.632-.19Z" transform="translate(-253.426 -253.011)" fill="#41479b"/>
+    <path id="Path_809" data-name="Path 809" d="M255.254,217.844l.19-.632.6-1.278.072.03-.479,1.329-.313.581Z" transform="translate(-253.01 -215.579)" fill="#41479b"/>
+    <path id="Path_810" data-name="Path 810" d="M239.577,255.692l-.313.581-.479,1.329.072.03.6-1.278.19-.632Z" transform="translate(-237.333 -253.427)" fill="#41479b"/>
+  </g>
+  <circle id="Ellipse_3" data-name="Ellipse 3" cx="0.349" cy="0.349" r="0.349" transform="translate(11.384 7.338)" fill="#f5f5f5"/>
+  <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.209" cy="0.209" r="0.209" transform="translate(11.524 7.478)" fill="#41479b"/>
+</svg>
