@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:ridebuddies/screens/start_riding/start_ride_widgets/driver_details_widgets/circle_icon.dart';
 import 'package:ridebuddies/screens/start_riding/start_ride_widgets/driver_details_widgets/driver_name_car_details.dart';
 import 'package:ridebuddies/style/colors.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DriverDetails extends StatelessWidget {
   @override
@@ -17,7 +17,7 @@ class DriverDetails extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16.h),
           decoration: BoxDecoration(
             color: white,
-            borderRadius: BorderRadius.circular(20.ssp),
+            borderRadius: BorderRadius.circular(20.sp),
           ),
           child: ListView(
             shrinkWrap: true,
@@ -27,7 +27,7 @@ class DriverDetails extends StatelessWidget {
                 'Your ride is arriving in 10 min',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 16.ssp,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -44,7 +44,7 @@ class DriverDetails extends StatelessWidget {
                     CircleAvatar(
                       backgroundImage: NetworkImage(
                           'https://randomuser.me/api/portraits/men/31.jpg'),
-                      radius: 36.ssp,
+                      radius: 36.sp,
                     ),
                     SizedBox(width: 20.w),
                     DriverNameCarDetails(),
@@ -144,15 +144,21 @@ class DriverDetails extends StatelessWidget {
               SizedBox(
                 height: 30.h,
               ),
-              RaisedButton(
-                padding: EdgeInsets.all(14.w),
+              ElevatedButton(
+                style: ButtonStyle(
+                    padding: MaterialStateProperty.all(EdgeInsets.all(14.w)),
+                    elevation: MaterialStateProperty.all(0),
+                    backgroundColor: MaterialStateProperty.all(
+                      Colors.red,
+                    )),
                 child: Text(
                   'Cancel Ride'.toUpperCase(),
-                  style: TextStyle(fontSize: 14.sp, letterSpacing: .4),
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    letterSpacing: .4,
+                    color: Colors.white,
+                  ),
                 ),
-                elevation: 0,
-                textColor: Colors.white,
-                color: Colors.red,
                 onPressed: () {},
               ),
               SizedBox(

@@ -9,9 +9,17 @@ class MapWidget extends StatefulWidget {
 }
 
 class _MapWidgetState extends State<MapWidget> {
-  GoogleMapController _controller;
-  String _mapStyle;
-  Position position = Position(latitude: 18.508921, longitude: 73.926025);
+  GoogleMapController? _controller;
+  String? _mapStyle;
+  Position position = Position(
+      latitude: 18.508921,
+      longitude: 73.926025,
+      accuracy: 0,
+      altitude: 0,
+      heading: 0,
+      speed: 0,
+      speedAccuracy: 0,
+      timestamp: DateTime.now());
 
   @override
   void initState() {
@@ -42,9 +50,9 @@ class _MapWidgetState extends State<MapWidget> {
       myLocationButtonEnabled: false,
       onMapCreated: (GoogleMapController controller) {
         _controller = controller;
-        _controller.setMapStyle(_mapStyle);
+        _controller!.setMapStyle(_mapStyle);
         Future.delayed(Duration(milliseconds: 100), () {
-          _controller.animateCamera(CameraUpdate.newLatLng(
+          _controller!.animateCamera(CameraUpdate.newLatLng(
               LatLng(position.latitude, position.longitude)));
         });
       },

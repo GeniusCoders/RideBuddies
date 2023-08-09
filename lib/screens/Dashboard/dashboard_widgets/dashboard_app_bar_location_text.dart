@@ -5,7 +5,7 @@ import 'package:ridebuddies/style/colors.dart';
 class DashboardAppBarLocationText extends StatelessWidget {
   final String locationText;
 
-  const DashboardAppBarLocationText({@required this.locationText});
+  const DashboardAppBarLocationText({required this.locationText});
 
   @override
   Widget build(BuildContext context) {

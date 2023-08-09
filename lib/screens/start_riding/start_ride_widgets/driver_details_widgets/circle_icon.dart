@@ -4,7 +4,7 @@ import 'package:ridebuddies/style/colors.dart';
 class CircleIcon extends StatelessWidget {
   final IconData icon;
 
-  const CircleIcon({@required this.icon});
+  const CircleIcon({required this.icon});
 
   @override
   Widget build(BuildContext context) {

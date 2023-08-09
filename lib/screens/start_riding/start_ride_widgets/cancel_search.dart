@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ridebuddies/style/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ridebuddies/style/colors.dart';
 
 class CancelSearch extends StatelessWidget {
   @override
@@ -13,7 +13,7 @@ class CancelSearch extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             color: white,
-            borderRadius: BorderRadius.circular(20.ssp),
+            borderRadius: BorderRadius.circular(20.sp),
           ),
           padding: EdgeInsets.only(bottom: 10.h),
           child: ListView(
@@ -24,7 +24,7 @@ class CancelSearch extends StatelessWidget {
                 'Searching Ride',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 16.ssp,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -32,7 +32,7 @@ class CancelSearch extends StatelessWidget {
                 'It may take some time',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 12.ssp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w600,
                   color: Colors.grey,
                 ),
@@ -44,20 +44,22 @@ class CancelSearch extends StatelessWidget {
                 thickness: .8,
               ),
               Padding(
-                padding: EdgeInsets.all(16.0.ssp),
+                padding: EdgeInsets.all(16.0.sp),
                 child: LinearProgressIndicator(),
               ),
               Padding(
-                padding: EdgeInsets.all(16.0.ssp),
-                child: RaisedButton(
-                  padding: EdgeInsets.all(14.w),
+                padding: EdgeInsets.all(16.0.sp),
+                child: ElevatedButton(
+                  style: ButtonStyle(
+                    padding: MaterialStateProperty.all(EdgeInsets.all(14.w)),
+                    elevation: MaterialStateProperty.all(0),
+                    backgroundColor: MaterialStateProperty.all(Colors.red),
+                  ),
                   child: Text(
                     'Cancel Ride'.toUpperCase(),
-                    style: TextStyle(fontSize: 14.sp, letterSpacing: .4),
+                    style: TextStyle(
+                        fontSize: 14.sp, letterSpacing: .4, color: white),
                   ),
-                  elevation: 0,
-                  textColor: Colors.white,
-                  color: Colors.red,
                   onPressed: () {},
                 ),
               ),

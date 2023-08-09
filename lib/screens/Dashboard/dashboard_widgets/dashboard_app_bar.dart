@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:ridebuddies/screens/Dashboard/dashboard_widgets/dashboard_app_bar_location_text.dart';
 import 'package:ridebuddies/style/colors.dart';

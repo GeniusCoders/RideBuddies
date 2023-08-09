@@ -6,13 +6,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SearchPlaceTextField extends StatelessWidget {
   final String labelName;
-  final IconData icon;
+  final IconData? icon;
   final Color backgroundColor;
-  final Function onTap;
+  final Function()? onTap;
   final double iconSize;
   const SearchPlaceTextField(
-      {@required this.labelName,
-      this.icon = MdiIcons.recordCircle,
+      {required this.labelName,
+      this.icon,
       this.backgroundColor = white,
       this.iconSize = 18,
       this.onTap});
@@ -33,7 +33,7 @@ class SearchPlaceTextField extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Icon(
-                icon,
+                icon ?? MdiIcons.recordCircle,
                 color: primary,
                 size: iconSize,
               ),

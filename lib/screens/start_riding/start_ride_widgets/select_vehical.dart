@@ -16,7 +16,7 @@ class SelectVehical extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             color: white,
-            borderRadius: BorderRadius.circular(20.ssp),
+            borderRadius: BorderRadius.circular(20.sp),
           ),
           padding: EdgeInsets.only(bottom: 10.h),
           child: ListView(
@@ -42,7 +42,10 @@ class SelectVehical extends StatelessWidget {
               RidePaymentRow(),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-                child: Button(title: 'Confirm Rikshaw'),
+                child: Button(
+                  title: 'Confirm Rikshaw',
+                  onPressed: () {},
+                ),
               ),
               SizedBox(height: 16.h),
             ],

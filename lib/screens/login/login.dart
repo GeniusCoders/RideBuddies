@@ -36,7 +36,6 @@ class Login extends StatelessWidget {
                           MaterialPageRoute(builder: (_) => DashboardPage()));
                     },
                   ),
-                  Text("HELLO MOTO")
                 ],
               ),
             ),

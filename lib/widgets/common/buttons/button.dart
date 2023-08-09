@@ -6,7 +6,8 @@ class Button extends StatelessWidget {
   final Function() onPressed;
   final String title;
   final bool swipeColor;
-  const Button({this.onPressed, @required this.title, this.swipeColor = false});
+  const Button(
+      {required this.onPressed, required this.title, this.swipeColor = false});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class Button extends StatelessWidget {
           title,
           style: TextStyle(
               color: swipeColor ? primary : white,
-              fontSize: 16.ssp,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w700,
               letterSpacing: .4),
         ),

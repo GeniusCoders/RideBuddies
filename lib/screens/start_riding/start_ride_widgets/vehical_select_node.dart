@@ -7,7 +7,10 @@ class VehicalSelectNode extends StatelessWidget {
   final String time;
   final String assets;
   const VehicalSelectNode(
-      {this.name, this.price, this.time, @required this.assets});
+      {required this.name,
+      required this.price,
+      required this.time,
+      required this.assets});
 
   @override
   Widget build(BuildContext context) {

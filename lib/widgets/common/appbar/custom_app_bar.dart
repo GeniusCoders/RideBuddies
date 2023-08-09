@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ridebuddies/style/colors.dart';
 
-class CustomAppBar extends PreferredSize {
+class CustomAppBar extends StatelessWidget {
   final List<Widget> children;
 
-  CustomAppBar({@required this.children});
+  CustomAppBar({required this.children});
 
   @override
   Widget build(BuildContext context) {

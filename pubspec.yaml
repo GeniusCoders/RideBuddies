@@ -6,19 +6,19 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.0
-  flutter_screenutil: ^3.2.0
-  font_awesome_flutter: ^8.10.0
-  google_maps_flutter: ^1.0.5
-  flutter_svg: ^0.19.1
-  material_design_icons_flutter: ^4.0.5755
-  geolocator: ^6.1.8+1
+  cupertino_icons: ^1.0.5
+  flutter_screenutil: 5.8.4
+  font_awesome_flutter: ^10.5.0
+  google_maps_flutter: ^2.4.0
+  flutter_svg: ^2.0.7
+  material_design_icons_flutter: ^7.0.7296
+  geolocator: ^9.0.2
 
 dev_dependencies:
   flutter_test:
